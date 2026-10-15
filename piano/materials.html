@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Материалы — PIANO</title>
+<meta name="description" content="Библиотека PIANO: 24 материала — дерево, камень, металл, стекло и лак.">
+<meta property="og:title" content="Материалы — PIANO">
+<meta property="og:description" content="Библиотека PIANO: 24 материала — дерево, камень, металл, стекло и лак.">
+<meta property="og:image" content="img/home-hero.jpg">
+<meta name="theme-color" content="#f4f1ec">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="data/catalog.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="hdr">
+<div class="wrap hdr__in">
+<a class="logo" href="index.html" aria-label="PIANO — на главную">PIANO</a>
+<nav class="nav" aria-label="Основное меню"><a href="catalog.html">Каталог</a><a href="materials.html" aria-current="page">Материалы</a><a href="studio.html">Студия</a><a href="showroom.html">Шоурум</a><a href="designers.html">Дизайнерам</a></nav>
+<div class="hdr__tools">
+<a class="fav-link label hide-sm" href="favorites.html">Избранное <span class="fav-count" data-fav-count hidden>0</span></a>
+<a class="btn hide-sm" href="contacts.html#form">Замер</a>
+<button type="button" class="icon-btn burger" data-menu-open aria-label="Открыть меню" aria-controls="mnav"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 7h16M3 15h16"/></svg></button>
+</div>
+</div>
+</header>
+<div class="mnav" id="mnav" hidden role="dialog" aria-modal="true" aria-label="Меню">
+<div class="mnav__top"><a class="logo" href="index.html">PIANO</a><button type="button" class="icon-btn" data-menu-close aria-label="Закрыть меню"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M5 5l12 12M17 5L5 17"/></svg></button></div>
+<ul><li><a href="catalog.html">Каталог</a></li><li><a href="materials.html">Материалы</a></li><li><a href="studio.html">Студия</a></li><li><a href="showroom.html">Шоурум</a></li><li><a href="designers.html">Дизайнерам</a></li><li><a href="favorites.html">Избранное <span class="fav-count" data-fav-count hidden>0</span></a></li><li><a href="contacts.html">Контакты</a></li></ul>
+<a class="btn btn--block" href="contacts.html#form">Записаться на замер</a>
+<p class="caption" style="margin-top:24px">Москва, Остоженка, 41 · +7 495 000-00-00 (демо)</p>
+</div>
+<main id="main"><div class="wrap">
+<p class="label crumbs"><a href="index.html">Главная</a> / <span aria-current="page">Материалы</span></p>
+<div class="g12" style="align-items:end;padding:64px 0 80px"><h1 class="display" style="grid-column:1/7">Материалы</h1><p class="lead" style="grid-column:8/13">24 материала, из которых собраны все коллекции. Каждый можно потрогать в шоуруме или заказать образцом к себе.</p></div>
+<div data-page="materials"></div>
+</div></main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr__cols">
+<div><p class="label muted" style="margin-bottom:12px">Шоурум</p><p>Москва, Остоженка, 41<br>вход со двора</p></div>
+<div><p class="label muted" style="margin-bottom:12px">Часы</p><p>Пн–пт 11:00–20:00<br>Сб 12:00–18:00, по записи</p></div>
+<div><p class="label muted" style="margin-bottom:12px">Связь</p><p>+7 495 000-00-00 (демо)<br><a href="contacts.html">Контакты</a></p></div>
+<div><p class="label muted" style="margin-bottom:12px">Каталог</p><p><a href="catalog.html?d=kitchens">Кухни</a> · <a href="catalog.html?d=furniture">Мебель</a> · <a href="catalog.html?d=stairs">Лестницы</a> · <a href="catalog.html?d=doors">Двери</a> · <a href="catalog.html?d=windows">Окна</a></p></div>
+</div>
+<p class="ftr__word" aria-hidden="true">PIANO</p>
+<div class="ftr__bottom"><span>PIANO — студия мебели и столярных изделий на заказ, Москва. Концепт-проект для портфолио, компания вымышленная.</span><a href="studio.html">О студии</a></div>
+</div>
+</footer>
+</body>
+</html>

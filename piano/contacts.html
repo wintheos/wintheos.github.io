@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакты — PIANO</title>
+<meta name="description" content="Контакты PIANO и заявка на замер.">
+<meta property="og:title" content="Контакты — PIANO">
+<meta property="og:description" content="Контакты PIANO и заявка на замер.">
+<meta property="og:image" content="img/home-hero.jpg">
+<meta name="theme-color" content="#f4f1ec">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="data/catalog.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="hdr">
+<div class="wrap hdr__in">
+<a class="logo" href="index.html" aria-label="PIANO — на главную">PIANO</a>
+<nav class="nav" aria-label="Основное меню"><a href="catalog.html">Каталог</a><a href="materials.html">Материалы</a><a href="studio.html">Студия</a><a href="showroom.html">Шоурум</a><a href="designers.html">Дизайнерам</a></nav>
+<div class="hdr__tools">
+<a class="fav-link label hide-sm" href="favorites.html">Избранное <span class="fav-count" data-fav-count hidden>0</span></a>
+<a class="btn hide-sm" href="contacts.html#form">Замер</a>
+<button type="button" class="icon-btn burger" data-menu-open aria-label="Открыть меню" aria-controls="mnav"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 7h16M3 15h16"/></svg></button>
+</div>
+</div>
+</header>
+<div class="mnav" id="mnav" hidden role="dialog" aria-modal="true" aria-label="Меню">
+<div class="mnav__top"><a class="logo" href="index.html">PIANO</a><button type="button" class="icon-btn" data-menu-close aria-label="Закрыть меню"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M5 5l12 12M17 5L5 17"/></svg></button></div>
+<ul><li><a href="catalog.html">Каталог</a></li><li><a href="materials.html">Материалы</a></li><li><a href="studio.html">Студия</a></li><li><a href="showroom.html">Шоурум</a></li><li><a href="designers.html">Дизайнерам</a></li><li><a href="favorites.html">Избранное <span class="fav-count" data-fav-count hidden>0</span></a></li><li><a href="contacts.html">Контакты</a></li></ul>
+<a class="btn btn--block" href="contacts.html#form">Записаться на замер</a>
+<p class="caption" style="margin-top:24px">Москва, Остоженка, 41 · +7 495 000-00-00 (демо)</p>
+</div>
+<main id="main"><div class="wrap">
+<p class="label crumbs"><a href="index.html">Главная</a> / <span aria-current="page">Контакты</span></p>
+<div class="g12" style="align-items:end;padding:64px 0 96px"><h1 class="display" style="grid-column:1/7">Контакты</h1><p class="lead" style="grid-column:8/13">Звоните, пишите или приходите в шоурум — дизайнер ответит в течение рабочего дня.</p></div>
+<div class="cols4" style="padding-bottom:var(--sec)">
+<div class="drow"><p class="label muted">Шоурум</p><p>Москва, Остоженка, 41<br>вход со двора</p></div>
+<div class="drow"><p class="label muted">Часы</p><p>Пн–пт 11:00–20:00<br>Сб 12:00–18:00, по записи</p></div>
+<div class="drow"><p class="label muted">Телефон</p><p>+7 495 000-00-00 (демо)</p></div>
+<div class="drow"><p class="label muted">Почта</p><p>hello@piano-studio.example</p></div>
+</div></div>
+<section class="sec sec--raised" id="form"><div class="wrap g12" style="align-items:start">
+<div style="grid-column:1/6"><span class="label muted">Заявка на замер</span><h2 class="h2" style="margin-top:24px">Расскажите о проекте</h2><p class="muted" style="margin-top:24px">Замер в пределах Москвы — бесплатно. Стоимость рассчитываем после замера и фиксируем в договоре.</p><a class="tlink" href="showroom.html#book" style="margin-top:32px">Или запишитесь в шоурум →</a></div>
+<div style="grid-column:7/13"><form class="form-grid" data-demo="contacts" novalidate>
+<label class="field"><span class="label">Имя</span><input name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required><span class="field__hint" hidden></span></label>
+<label class="field"><span class="label">Телефон</span><input name="phone" type="tel" placeholder="+7" autocomplete="tel" required><span class="field__hint" hidden></span></label>
+<label class="field"><span class="label">Что интересует</span><input name="interest" type="text" placeholder="Кухня и двери"><span class="field__hint" hidden></span></label>
+<label class="field"><span class="label">Стадия ремонта</span><select name="stage"><option>Проект</option><option>Черновая отделка</option><option>Чистовая отделка</option><option>Ремонт закончен</option></select></label>
+<label class="field full"><span class="label">Комментарий</span><textarea name="comment" rows="2" placeholder="Площадь, сроки, работаете ли с дизайнером"></textarea></label>
+<div class="full form-foot"><p class="caption" style="max-width:320px">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p><button type="submit" class="btn">Отправить заявку</button></div>
+</form></div>
+</div></section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr__cols">
+<div><p class="label muted" style="margin-bottom:12px">Шоурум</p><p>Москва, Остоженка, 41<br>вход со двора</p></div>
+<div><p class="label muted" style="margin-bottom:12px">Часы</p><p>Пн–пт 11:00–20:00<br>Сб 12:00–18:00, по записи</p></div>
+<div><p class="label muted" style="margin-bottom:12px">Связь</p><p>+7 495 000-00-00 (демо)<br><a href="contacts.html">Контакты</a></p></div>
+<div><p class="label muted" style="margin-bottom:12px">Каталог</p><p><a href="catalog.html?d=kitchens">Кухни</a> · <a href="catalog.html?d=furniture">Мебель</a> · <a href="catalog.html?d=stairs">Лестницы</a> · <a href="catalog.html?d=doors">Двери</a> · <a href="catalog.html?d=windows">Окна</a></p></div>
+</div>
+<p class="ftr__word" aria-hidden="true">PIANO</p>
+<div class="ftr__bottom"><span>PIANO — студия мебели и столярных изделий на заказ, Москва. Концепт-проект для портфолио, компания вымышленная.</span><a href="studio.html">О студии</a></div>
+</div>
+</footer>
+</body>
+</html>

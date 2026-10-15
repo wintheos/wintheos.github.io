@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шоурум — PIANO</title>
+<meta name="description" content="Шоурум PIANO на Остоженке: экспозиция и запись на визит.">
+<meta property="og:title" content="Шоурум — PIANO">
+<meta property="og:description" content="Шоурум PIANO на Остоженке: экспозиция и запись на визит.">
+<meta property="og:image" content="img/home-hero.jpg">
+<meta name="theme-color" content="#f4f1ec">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="data/catalog.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="hdr hdr--photo">
+<div class="wrap hdr__in">
+<a class="logo" href="index.html" aria-label="PIANO — на главную">PIANO</a>
+<nav class="nav" aria-label="Основное меню"><a href="catalog.html">Каталог</a><a href="materials.html">Материалы</a><a href="studio.html">Студия</a><a href="showroom.html" aria-current="page">Шоурум</a><a href="designers.html">Дизайнерам</a></nav>
+<div class="hdr__tools">
+<a class="fav-link label hide-sm" href="favorites.html">Избранное <span class="fav-count" data-fav-count hidden>0</span></a>
+<a class="btn btn--ghost-light hide-sm" href="contacts.html#form">Замер</a>
+<button type="button" class="icon-btn burger" data-menu-open aria-label="Открыть меню" aria-controls="mnav"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 7h16M3 15h16"/></svg></button>
+</div>
+</div>
+</header>
+<div class="mnav" id="mnav" hidden role="dialog" aria-modal="true" aria-label="Меню">
+<div class="mnav__top"><a class="logo" href="index.html">PIANO</a><button type="button" class="icon-btn" data-menu-close aria-label="Закрыть меню"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M5 5l12 12M17 5L5 17"/></svg></button></div>
+<ul><li><a href="catalog.html">Каталог</a></li><li><a href="materials.html">Материалы</a></li><li><a href="studio.html">Студия</a></li><li><a href="showroom.html">Шоурум</a></li><li><a href="designers.html">Дизайнерам</a></li><li><a href="favorites.html">Избранное <span class="fav-count" data-fav-count hidden>0</span></a></li><li><a href="contacts.html">Контакты</a></li></ul>
+<a class="btn btn--block" href="contacts.html#form">Записаться на замер</a>
+<p class="caption" style="margin-top:24px">Москва, Остоженка, 41 · +7 495 000-00-00 (демо)</p>
+</div>
+<main id="main">
+<section class="hero hero--short">
+<img class="hero__img" src="img/home-showroom.jpg" alt="Шоурум PIANO: кухня «Порог» и стол с образцами материалов" fetchpriority="high">
+<div class="wrap hero__body"><div><p class="label" style="margin-bottom:24px">Шоурум · по записи</p><h1 class="display" style="font-size:104px;line-height:100px">Остоженка, 41</h1></div><a class="btn btn--light" href="#book">Выбрать время визита</a></div>
+</section>
+<section class="sec" style="padding-bottom:120px"><div class="wrap g12">
+<p class="quote" style="grid-column:1/7">Три кухни в натуральную величину, двери в работе и все 24 материала. Дизайнер заранее готовит образцы под ваш проект.</p>
+<div class="cols2" style="grid-column:8/13;gap:0 24px">
+<div class="drow"><p class="label muted">Адрес</p><p>Москва, Остоженка, 41, вход со двора</p></div><div class="drow"><p class="label muted">Как добраться</p><p>Пешком от метро «Парк культуры»</p></div>
+<div class="drow"><p class="label muted">Часы</p><p>Пн–пт 11:00–20:00<br>Сб 12:00–18:00</p></div><div class="drow"><p class="label muted">Телефон</p><p>+7 495 000-00-00 (демо)</p></div>
+</div></div></section>
+<section class="sec sec--top0"><div class="wrap">
+<div class="sec-head"><span class="label">Что посмотреть вживую</span><h2 class="h2">Экспозиция шоурума</h2></div>
+<div class="cols3">
+<a class="card reveal" href="catalog.html?d=kitchens"><div class="photo r45"><img src="img/cover-porog.jpg" alt="Кухня «Порог»" loading="lazy"></div><div class="card__meta"><h3 class="h3">Кухни</h3><span class="label muted">Ребро · Туф · Порог</span></div></a>
+<a class="card reveal" href="catalog.html?d=doors"><div class="photo r45"><img src="img/cover-ploskost.jpg" alt="Дверь «Плоскость»" loading="lazy"></div><div class="card__meta"><h3 class="h3">Двери</h3><span class="label muted">Плоскость · Портал</span></div></a>
+<a class="card reveal" href="collection.html?c=marsh"><div class="photo r45"><img src="img/cover-marsh.jpg" alt="Лестница «Марш»" loading="lazy"></div><div class="card__meta"><h3 class="h3">Лестница</h3><span class="label muted">Марш</span></div></a>
+</div></div></section>
+<section class="sec sec--raised" id="book"><div class="wrap g12" style="align-items:start" data-page="booking">
+<div style="grid-column:1/5"><span class="label muted">Запись на визит</span><h2 class="h1" style="font-size:56px;line-height:60px;margin-top:24px">Выберите день и время</h2><p class="muted" style="margin-top:24px">Визит длится около часа. Если время не подошло, позвоните — подберём другое.</p></div>
+<div style="grid-column:6/13">
+<form data-booking data-demo="showroom" novalidate>
+<p class="label muted" style="margin-bottom:12px" data-month></p>
+<div class="days" role="group" aria-label="День визита" data-days></div>
+<p class="label muted" style="margin:40px 0 12px">Время · <span data-day-label></span></p>
+<div class="slots" role="group" aria-label="Время визита" data-slots></div>
+<p class="label muted" style="margin:40px 0 12px">Цель визита</p>
+<div class="chips" role="group" aria-label="Цель визита" data-goals></div>
+<input type="hidden" name="when">
+<div class="form-grid" style="margin-top:40px"><label class="field"><span class="label">Имя</span><input name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name" required><span class="field__hint" hidden></span></label><label class="field"><span class="label">Телефон</span><input name="phone" type="tel" placeholder="+7" autocomplete="tel" required><span class="field__hint" hidden></span></label></div>
+<div class="form-foot" style="margin-top:40px;padding-top:24px;border-top:1px solid var(--stone)"><p data-summary aria-live="polite"></p><button type="submit" class="btn" data-book disabled>Записаться</button></div>
+</form>
+<div class="done" data-done hidden tabindex="-1"><p class="label" style="color:var(--accent)">Вы записаны</p><p class="h2" style="margin-top:16px">Ждём вас <span data-when></span></p><p class="muted" style="margin-top:24px">Дизайнер позвонит накануне и уточнит, какие образцы подготовить. Это демо-версия сайта: данные никуда не отправлены.</p><button type="button" class="tlink" data-again style="margin-top:32px">Изменить время</button></div>
+</div></div></section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr__cols">
+<div><p class="label muted" style="margin-bottom:12px">Шоурум</p><p>Москва, Остоженка, 41<br>вход со двора</p></div>
+<div><p class="label muted" style="margin-bottom:12px">Часы</p><p>Пн–пт 11:00–20:00<br>Сб 12:00–18:00, по записи</p></div>
+<div><p class="label muted" style="margin-bottom:12px">Связь</p><p>+7 495 000-00-00 (демо)<br><a href="contacts.html">Контакты</a></p></div>
+<div><p class="label muted" style="margin-bottom:12px">Каталог</p><p><a href="catalog.html?d=kitchens">Кухни</a> · <a href="catalog.html?d=furniture">Мебель</a> · <a href="catalog.html?d=stairs">Лестницы</a> · <a href="catalog.html?d=doors">Двери</a> · <a href="catalog.html?d=windows">Окна</a></p></div>
+</div>
+<p class="ftr__word" aria-hidden="true">PIANO</p>
+<div class="ftr__bottom"><span>PIANO — студия мебели и столярных изделий на заказ, Москва. Концепт-проект для портфолио, компания вымышленная.</span><a href="studio.html">О студии</a></div>
+</div>
+</footer>
+</body>
+</html>
