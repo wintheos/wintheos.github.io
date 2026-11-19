@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Все проекты — Илья Сухов</title>
-<meta name="description" content="Илья Сухов — веб-разработчик. Делаю сайты и лендинги для бизнеса, которые приводят клиентов.">
+<title>Портфолио веб-дизайнера — сайты Ильи Сухова</title>
+<meta name="description" content="Портфолио Ильи Сухова. Примеры веб-дизайна и разработки сайтов для ресторана, мебельной студии, бренда украшений и других проектов.">
+<link rel="canonical" href="https://wintheos.github.io/projects/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&family=Golos+Text:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -165,6 +166,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
 .proj__info{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;min-width:0}
 .proj__idx{display:flex;gap:16px;font-variant-numeric:tabular-nums}
 .proj h3{font-size:clamp(26px,3vw,36px);line-height:1.12;font-weight:400;letter-spacing:-.03em;overflow-wrap:break-word;hyphens:auto}
+.proj__description{margin-top:8px;color:var(--ink-secondary);line-height:1.5}
 .proj__side{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .proj__tags{display:flex;flex-wrap:wrap;gap:8px}
 @media (min-width:900px){
@@ -249,8 +251,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
     <div class="wrap grid">
       <div class="sec__head">
         <div class="sec__label mono"><span>N° 01</span><span class="muted">Все проекты</span></div>
-        <h1 class="sec__title">Проекты</h1>
-        <p class="lead">6 живых сайтов, от новых к старым. Каждый можно открыть.</p>
+        <h1 class="sec__title">Портфолио</h1>
+        <p class="lead">Шесть проектов: лендинги, сайты-каталоги и веб-сервис. Каждый можно открыть.</p>
         <a class="tlink back" href="../">← На главную</a>
       </div>
       <div class="sec__body">
@@ -260,7 +262,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
           </a>
           <div class="proj__info">
             <div class="proj__idx mono muted"><span>Проект 01</span><span>Украшения</span></div>
-            <h3>RAW SIGNAL — концептуальные украшения</h3>
+            <div>
+              <h3>RAW SIGNAL — концептуальные украшения</h3>
+              <p class="proj__description">Сайт-каталог для бренда украшений с карточками изделий, корзиной и оформлением заказа.</p>
+            </div>
             <div class="proj__side">
               <div class="proj__tags mono"><span class="tag">Сайт-каталог</span><span class="tag">Корзина и заказ</span></div>
               <a class="tlink" href="https://wintheos.github.io/raw-signal/" target="_blank" rel="noopener" aria-label="Смотреть сайт: RAW SIGNAL">Смотреть сайт <span class="arr" aria-hidden="true">↗</span></a>
@@ -273,7 +278,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
           </a>
           <div class="proj__info">
             <div class="proj__idx mono muted"><span>Проект 02</span><span>Интерьер</span></div>
-            <h3>PIANO — мебель и кухни на заказ</h3>
+            <div>
+              <h3>PIANO — мебель и кухни на заказ</h3>
+              <p class="proj__description">Сайт мебельной студии с каталогом коллекций и формой заявки на замер.</p>
+            </div>
             <div class="proj__side">
               <div class="proj__tags mono"><span class="tag">Сайт-каталог</span><span class="tag">Замер онлайн</span></div>
               <a class="tlink" href="https://wintheos.github.io/piano/" target="_blank" rel="noopener" aria-label="Смотреть сайт: PIANO">Смотреть сайт <span class="arr" aria-hidden="true">↗</span></a>
@@ -286,7 +294,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
           </a>
           <div class="proj__info">
             <div class="proj__idx mono muted"><span>Проект 03</span><span>Ресторан</span></div>
-            <h3>Mattarello — итальянское гастро-бистро</h3>
+            <div>
+              <h3>Mattarello — итальянское гастро-бистро</h3>
+              <p class="proj__description">Сайт для ресторана с меню и формой бронирования столика.</p>
+            </div>
             <div class="proj__side">
               <div class="proj__tags mono"><span class="tag">Сайт</span><span class="tag">Меню и бронь</span></div>
               <a class="tlink" href="https://wintheos.github.io/mattarello/" target="_blank" rel="noopener" aria-label="Смотреть сайт: Mattarello">Смотреть сайт <span class="arr" aria-hidden="true">↗</span></a>
@@ -299,7 +310,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
           </a>
           <div class="proj__info">
             <div class="proj__idx mono muted"><span>Проект 04</span><span>Туризм</span></div>
-            <h3>Terra Quieta — авторские туры по Европе</h3>
+            <div>
+              <h3>Terra Quieta — авторские туры по Европе</h3>
+              <p class="proj__description">Лендинг для туристического проекта с подбором тура через квиз.</p>
+            </div>
             <div class="proj__side">
               <div class="proj__tags mono"><span class="tag">Лендинг</span><span class="tag">Квиз подбора</span></div>
               <a class="tlink" href="https://wintheos.github.io/terra-quieta/" target="_blank" rel="noopener" aria-label="Смотреть сайт: Terra Quieta">Смотреть сайт <span class="arr" aria-hidden="true">↗</span></a>
@@ -312,7 +326,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
           </a>
           <div class="proj__info">
             <div class="proj__idx mono muted"><span>Проект 05</span><span>Медицина</span></div>
-            <h3>«Эмаль» — стоматологическая клиника</h3>
+            <div>
+              <h3>«Эмаль» — стоматологическая клиника</h3>
+              <p class="proj__description">Сайт для стоматологии с информацией об услугах и онлайн-записью.</p>
+            </div>
             <div class="proj__side">
               <div class="proj__tags mono"><span class="tag">Сайт</span><span class="tag">Запись онлайн</span></div>
               <a class="tlink" href="https://wintheos.github.io/emal-dental/" target="_blank" rel="noopener" aria-label="Смотреть сайт: «Эмаль»">Смотреть сайт <span class="arr" aria-hidden="true">↗</span></a>
@@ -325,7 +342,10 @@ h1,h2,h3{font-family:var(--font-display);font-weight:300;text-wrap:balance}
           </a>
           <div class="proj__info">
             <div class="proj__idx mono muted"><span>Проект 06</span><span>Сервис</span></div>
-            <h3>«Вечером.» — подбор фильма по настроению</h3>
+            <div>
+              <h3>«Вечером.» — подбор фильма по настроению</h3>
+              <p class="proj__description">Прототип веб-сервиса, который помогает выбрать фильм по настроению.</p>
+            </div>
             <div class="proj__side">
               <div class="proj__tags mono"><span class="tag">Веб-сервис</span><span class="tag">Прототип</span></div>
               <a class="tlink" href="https://wintheos.github.io/movie-picker/" target="_blank" rel="noopener" aria-label="Смотреть сайт: «Вечером.»">Смотреть сайт <span class="arr" aria-hidden="true">↗</span></a>

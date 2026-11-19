@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://wintheos.github.io/sitemap.xml
